@@ -23,8 +23,8 @@ public class SimplePresentationScreen extends JFrame {
 	private JTabbedPane tabbedPane;
 	private Student studentData;
 	private JTextField LU;
-	private JTextField firstName;
 	private JTextField lastName;
+	private JTextField firstName;
 	private JTextField email;
 	private JTextField gitHubURL;
 	private JLabel date;
@@ -87,17 +87,17 @@ public class SimplePresentationScreen extends JFrame {
 		LU.setColumns(10);
 		LU.setText(((Integer) studentData.getId()).toString());
 		
-		firstName = new JTextField();
-		firstName.setBounds(95, 45, 320, 20);
-		firstName.setColumns(10);
-		tabInformation.add(firstName);
-		firstName.setText(studentData.getFirstName());
-		
 		lastName = new JTextField();
-		lastName.setBounds(95, 75, 320, 20);
+		lastName.setBounds(95, 45, 320, 20);
 		lastName.setColumns(10);
 		tabInformation.add(lastName);
 		lastName.setText(studentData.getLastName());
+		
+		firstName = new JTextField();
+		firstName.setBounds(95, 75, 320, 20);
+		firstName.setColumns(10);
+		tabInformation.add(firstName);
+		firstName.setText(studentData.getFirstName());
 		
 		email = new JTextField();
 		email.setBounds(95, 105, 320, 20);
