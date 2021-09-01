@@ -122,7 +122,7 @@ public class SimplePresentationScreen extends JFrame {
 		date.setText("Esta ventana fue generada el día: " + day.format (currentDate) + " a las "+ time.format(currentDate));
 		
 		studentPhoto = new JLabel("");
-		studentPhoto.setBounds(450, 30, 180, 180);
+		studentPhoto.setBounds(446, 23, 180, 180);
 		ImageIcon image = new ImageIcon (this.getClass().getResource(studentData.getPathPhoto()));
 		ImageIcon resizeImage = new ImageIcon (image.getImage().getScaledInstance (studentPhoto.getWidth(), studentPhoto.getHeight(), Image.SCALE_DEFAULT));
         studentPhoto.setIcon(resizeImage);
